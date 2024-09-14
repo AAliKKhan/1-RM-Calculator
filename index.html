@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Rep Max Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="p.png">
+<div>
+    <h3>Enter Lift</h3>
+    <input type="number" id="LIFT" min="0"><br>
+    <h3>Enter Repetitions</h3>
+    <input type="number" id="REPETITIONS" min="0"><br>
+    <form>
+        <h4>Select Gender:</h4>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+    </form>
+    <br>
+    <form>
+        <h4>Select Lift Type:</h4>
+        <input type="radio" id="squat" name="lift" value="Squat">
+        <label for="squat">Squat</label><br>
+        <input type="radio" id="bench" name="lift" value="Bench Press">
+        <label for="bench">Bench Press</label><br>
+        <input type="radio" id="deadlift" name="lift" value="Deadlift">
+        <label for="deadlift">Deadlift</label><br>
+    </form>
+    <br>
+    <p id="RESULT"></p>
+    <button id="CALCULATE">Calculate</button>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
